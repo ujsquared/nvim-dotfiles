@@ -1,7 +1,9 @@
 ## 0.0.2 (unreleased)
 
 
-- Nothing changed yet.
+- Add towncrier for news.
 
 
 ## 0.0.1 (2024-05-06)
+
+- Initial release.

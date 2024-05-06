@@ -19,6 +19,14 @@ python-file-with-version = "plone_sphinx_theme/__init__.py"
 [project]
 name = "plone-sphinx-theme"
 description = "Plone Sphinx Theme is the official Sphinx theme for Plone 6 Documentation, Plone Conference Training, and documentation of various Plone packages."
+keywords = [
+  "Plone",
+  "Sphinx",
+  "Theme",
+  "documentation",
+  "training",
+  "Diátaxis",
+]
 dynamic = ["version"]
 readme = "README.md"
 
@@ -32,7 +40,9 @@ license = { file = "LICENSE" }
 maintainers = [
   { name = "Steve Piercy", email = "spiercy@plone.org" },
 ]
-
+authors = [
+  { name = "Steve Piercy", email = "spiercy@plone.org" },
+]
 classifiers = [
   "Development Status :: 4 - Beta",
   "Framework :: Sphinx",

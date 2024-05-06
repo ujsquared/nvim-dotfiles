@@ -7,6 +7,15 @@
 -->
 
 <!-- towncrier release notes start -->
+
+0.0.2 (2024-05-06)
+------------------
+
+### New features:
+
+- Add towncrier. @stevepiercy ([Issue #1](https://github.com/plone/plone-sphinx-theme/1))
+
+
 ## 0.0.2 (unreleased)
 
 

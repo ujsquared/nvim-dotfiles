@@ -1,0 +1,13 @@
+/*! plone-sphinx-theme CSS
+ * GNU GPLv2 License
+ * Copyright (c) 2024, Plone Foundation
+ * All rights reserved.
+ */
+
+// Use sphinx-book-theme SCSS as base
+@import "sphinx-book-theme/index";
+
+// Re-usable components across the theme
+@import "components/title";
+
+@import "content/margin";

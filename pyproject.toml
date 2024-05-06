@@ -14,7 +14,7 @@ theme-name = "plone-sphinx-theme"
 #]
 
 [tool.zest-releaser]
-python-file-with-version = "plone_sphinx_theme/__init__.py"
+python-file-with-version = "src/plone_sphinx_theme/__init__.py"
 
 [project]
 name = "plone-sphinx-theme"

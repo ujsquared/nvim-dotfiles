@@ -7,7 +7,12 @@ myst:
     "keywords": "Plone, documentation, glossary, term, definition"
 ---
 
+(glossary-label)=
+
 # Glossary
+
+```{glossary}
+:sorted: true
 
 Sphinx
 :   [Sphinx](https://www.sphinx-doc.org/en/master/) is a tool that makes it easy to create intelligent and beautiful documentation.
@@ -53,3 +58,4 @@ Open Graph
     The [Open Graph protocol](https://ogp.me/) enables any web page to become a rich object in a social graph.
     For instance, this is used on Facebook to allow any web page to have the same functionality as any other object on Facebook.
 
+```

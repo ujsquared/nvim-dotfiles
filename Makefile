@@ -214,8 +214,8 @@ kitchen-sink-update:  ## Copy Kitchen Sink documentation files to Plone Sphinx T
 
 .PHONY: netlify
 netlify:
-	pip install -e ".[doc]"
 	pip install -r requirements-netlify.txt
+	pip install .
 	cd $(DOCS_DIR) && sphinx-build -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html && cp ./netlify_robots.txt $(BUILDDIR)/html/robots.txt
 
 .PHONY: all

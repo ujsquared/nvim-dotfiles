@@ -214,15 +214,8 @@ kitchen-sink-update:  ## Copy Kitchen Sink documentation files to Plone Sphinx T
 
 .PHONY: netlify
 netlify:
-	pip install -r requirements-initial.txt
-	pip install -r requirements.txt
+	pip install -e ".[doc]"
 	pip install -r requirements-netlify.txt
-	git submodule init; \
-	git submodule update; \
-	pip install -e submodules/plone.api[test]; \
-	ln -s ../submodules/volto/docs/source ./docs/volto
-	ln -s ../submodules/plone.restapi ./docs/plone.restapi
-	ln -s ../submodules/plone.api/docs ./docs/plone.api
 	cd $(DOCS_DIR) && sphinx-build -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html && cp ./netlify_robots.txt $(BUILDDIR)/html/robots.txt
 
 .PHONY: all

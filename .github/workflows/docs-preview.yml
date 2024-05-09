@@ -26,7 +26,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -e ".[doc]"
+          pip install ".[doc]"
           pip freeze
         if: github.event.action != 'closed'
 
@@ -39,5 +39,5 @@ jobs:
         with:
           source-dir: .
           preview-branch: main
-          umbrella-dir: _build/html/pr-preview
+          umbrella-dir: pr-preview
           action: auto

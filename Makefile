@@ -212,11 +212,5 @@ sbt-styles-update:  ## Copy Sphinx Book Theme styles to Plone Sphinx Theme
 kitchen-sink-update:  ## Copy Kitchen Sink documentation files to Plone Sphinx Theme
 	bin/python scripts/kitchen_sink_update.py
 
-.PHONY: netlify
-netlify:
-	pip install -r requirements-netlify.txt
-	pip install .
-	cd $(DOCS_DIR) && sphinx-build -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html && cp ./netlify_robots.txt $(BUILDDIR)/html/robots.txt
-
 .PHONY: all
 all: clean vale linkcheck html  ## Clean docs build, then run vale and linkcheck, and build html

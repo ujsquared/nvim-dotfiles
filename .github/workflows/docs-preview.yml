@@ -9,11 +9,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-## Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-#permissions:
-#  contents: read
-#  pages: write
-#  id-token: write
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 # One preview per pull request
 concurrency: preview-${{ github.ref }}
@@ -23,12 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: |
-          pip install ".[doc]"
-          pip freeze
-        if: github.event.action != 'closed'
 
       - name: Build Documentation
         run: |

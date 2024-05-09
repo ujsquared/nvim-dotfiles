@@ -1,0 +1,43 @@
+name: Deploy pull request previews
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One preview per pull request
+concurrency: preview-${{ github.ref }}
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          pip install -e ".[doc]"
+          pip freeze
+        if: github.event.action != 'closed'
+
+      - name: Build Documentation
+        run: |
+          make clean html
+        if: github.event.action != 'closed'
+
+      - uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: .
+          preview-branch: main
+          umbrella-dir: _build/html/pr-preview
+          action: auto

@@ -212,12 +212,5 @@ sbt-styles-update:  ## Copy Sphinx Book Theme styles to Plone Sphinx Theme
 kitchen-sink-update:  ## Copy Kitchen Sink documentation files to Plone Sphinx Theme
 	bin/python scripts/kitchen_sink_update.py
 
-.PHONY: pull-request-preview
-pull-request-preview:
-	pip install ".[initial]"
-	pip install ".[doc]"
-	pip install .
-	cd $(DOCS_DIR) && sphinx-build -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
-
 .PHONY: all
 all: clean vale linkcheck html  ## Clean docs build, then run vale and linkcheck, and build html

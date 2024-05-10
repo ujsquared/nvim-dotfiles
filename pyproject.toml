@@ -12,7 +12,7 @@ keywords = [
 dynamic = ["version"]
 readme = "README.md"
 
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 dependencies = [
   "sphinx>=7",
   "sphinx-book-theme>=1.1.2",
@@ -33,6 +33,7 @@ classifiers = [
   "Operating System :: OS Independent",
   "Programming Language :: Python",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",

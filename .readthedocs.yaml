@@ -12,7 +12,7 @@ build:
     python: "3.12"
 #    nodejs: "19"
   commands:
-    - make html
+    - make rtd-pr-preview
 
 # Build documentation in the "docs/" directory with Sphinx
 #sphinx:

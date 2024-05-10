@@ -19,3 +19,4 @@ jobs:
       - uses: readthedocs/actions/preview@v1
         with:
           project-slug: "plone-sphinx-theme"
+          single-version: "true"

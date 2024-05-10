@@ -13,6 +13,10 @@ It is based on [`sphinx-book-theme`](https://sphinx-book-theme.readthedocs.io/en
 
 ## Documentation and demonstration
 
+Documentation is hosted on GitHub at a temporary URL:
+
+https://plone.github.io/plone-sphinx-theme/
+
 TODO:
 
 To build documentation and a demonstration of this project, you can use `make` commands.

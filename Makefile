@@ -213,9 +213,7 @@ kitchen-sink-update:  ## Copy Kitchen Sink documentation files to Plone Sphinx T
 	bin/python scripts/kitchen_sink_update.py
 
 .PHONY: rtd-pr-preview
-rtd-pr-preview:  ## Build pull request preview on Read the Docs
-	bin/pip install ".[initial]"
-	bin/pip install ".[doc]"
+rtd-pr-preview: bin/python  ## Build pull request preview on Read the Docs
 	cd $(DOCS_DIR) && $(SPHINXBUILD) -b html $(ALLSPHINXOPTS) ${READTHEDOCS_OUTPUT}/html/
 
 .PHONY: all

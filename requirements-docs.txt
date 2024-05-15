@@ -1,7 +1,7 @@
 # requirements-docs.txt
 graphviz
 linkify-it-py
-myst_parser
+myst-parser
 sphinx-autobuild
 sphinx-copybutton
 sphinx-design

@@ -1,0 +1,22 @@
+# requirements-initial.txt
+# From https://dist.plone.org/release/6-latest/constraints.txt
+pip==24.0
+setuptools==69.5.1
+wheel==0.43.0
+
+doc = [
+  "graphviz",
+  "linkify-it-py",
+  "myst_parser",
+  "sphinx-autobuild",
+  "sphinx-copybutton",
+  "sphinx-design",
+  "sphinx-examples",
+  "sphinx-notfound-page",
+  "sphinx-reredirects",
+  "sphinx-sitemap",
+  "sphinxcontrib.httpdomain",
+  "sphinxcontrib.httpexample",
+  "sphinxcontrib-video",
+  "sphinxext-opengraph",
+  "vale==2.30.0",

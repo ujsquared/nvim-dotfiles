@@ -10,7 +10,7 @@ myst:
 # Usage
 
 This guide describes how to use Plone Sphinx Theme for documentation of your project.
-By following this guide, you can consistently reproduce results in any environment, including to Read the Docs, Netlify, or GitHub Pages.
+By following this guide, you can consistently reproduce results in any environment, including to Read the Docs.
 
 ```{seealso}
 To contribute code to Plone Sphinx Theme, first follow the {doc}`contributing-policies`, then {doc}`contribute`.

@@ -7,15 +7,15 @@ It is based on [`sphinx-book-theme`](https://sphinx-book-theme.readthedocs.io/en
 
 ## Requirements
 
--   Python 3.10, 3.11, or 3.12
+-   Python 3.9, 3.10, 3.11, or 3.12
 -   GNU Make is required only for contributing to or development of this theme.
 
 
 ## Documentation and demonstration
 
-Documentation is hosted on GitHub at a temporary URL:
+Documentation is hosted on Read the Docs.
 
-https://plone.github.io/plone-sphinx-theme/
+https://plone-sphinx-theme.readthedocs.io/
 
 TODO:
 

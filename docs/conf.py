@@ -215,7 +215,7 @@ html_theme_options = {
     "navigation_with_keys": True,
     "path_to_docs": "docs",
     "repository_branch": "main",
-    "repository_url": "https://github.com/plone/documentation",
+    "repository_url": "https://github.com/plone/plone-sphinx-theme",
     "search_bar_text": "Search",  # TODO: Confirm usage of search_bar_text
     "switcher": {
         "json_url": "/_static/switcher.json",
@@ -227,7 +227,7 @@ html_theme_options = {
 }
 # suggest edit link
 # remark: {{ file_name }} is mandatory in "edit_page_url_template"
-html_context = {  # TODO: verify html_context usage in theme
+html_context = {  # TODO: verify html_context usage in plone-sphinx-theme
     "edit_page_url_template": "https://6.docs.plone.org/contributing/index.html?{{ file_name }}#making-contributions-on-github",
 }
 
@@ -259,7 +259,20 @@ html_static_path = [
     "_static",  # Last path wins. See https://github.com/plone/documentation/pull/1442
 ]
 
+
+# -- Options for autodoc ----------------------------------------------------
+
+# https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html#configuration
+# Automatically extract typehints when specified and place them in
+# descriptions of the relevant function/method.
+# autodoc_typehints = "description"
+
+# Don't show class signature with the class' name.
+autodoc_class_signature = "separated"
+
+
 # -- Options for sphinx_sitemap to html -----------------------------
+
 # Used by sphinx_sitemap to generate a sitemap
 html_baseurl = "https://6.docs.plone.org/"
 # https://sphinx-sitemap.readthedocs.io/en/latest/advanced-configuration.html#customizing-the-url-scheme
@@ -385,7 +398,7 @@ def source_replace(app, docname, source):
 # Dict of replacements.
 source_replacements = {
     "{PLONE_BACKEND_MINOR_VERSION}": "6.0",
-    "{PLONE_BACKEND_PATCH_VERSION}": "6.0.10.1",
+    "{PLONE_BACKEND_PATCH_VERSION}": "6.0.11",
     "{NVM_VERSION}": "0.39.5",
     "{SUPPORTED_PYTHON_VERSIONS}": "3.8, 3.9, 3.10, 3.11, or 3.12",
 }

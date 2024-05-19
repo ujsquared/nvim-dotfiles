@@ -124,6 +124,11 @@ title_format = "{version} ({project_date})"
 underlines = ["-", ""]
 
 [[tool.towncrier.type]]
+directory = "internal"
+name = "Internal changes:"
+showcontent = true
+
+[[tool.towncrier.type]]
 directory = "breaking"
 name = "Breaking changes:"
 showcontent = true

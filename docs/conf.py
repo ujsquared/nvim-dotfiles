@@ -277,6 +277,7 @@ autodoc_class_signature = "separated"
 html_baseurl = "https://plone-sphinx-theme.readthedocs.io/"
 # https://sphinx-sitemap.readthedocs.io/en/latest/advanced-configuration.html#customizing-the-url-scheme
 sitemap_url_scheme = "{link}"
+sitemap_filename = "sitemap-custom.xml"
 
 # -- Options for myST markdown conversion to html -----------------------------
 

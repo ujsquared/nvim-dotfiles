@@ -13,7 +13,7 @@ myst:
 
 It uses [Markedly Structured Text (MyST)](https://myst-parser.readthedocs.io/en/latest/), a rich and extensible flavor of Markdown for authoring documentation that combines the simplicity of CommonMark with the features of reStructuredText.
 
-Plone Sphinx Theme requires Python 3.10, 3.11, or 3.12.
+Plone Sphinx Theme requires Python 3.9, 3.10, 3.11, or 3.12.
 
 
 ```{todo}

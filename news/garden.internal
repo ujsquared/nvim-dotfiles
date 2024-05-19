@@ -1,5 +1,1 @@
 Add .gitkeep to news directory to preserve it upon releases. @stevepiercy
-- Fix CHANGES.md content for automatic updates upon releases. @stevepiercy
-- Add GitHub action to deploy documentation to Read the Docs. @stevepiercy
-- Add pull request preview on Read the Docs. @stevepiercy
-- Clean up conf.py. @stevepiercy

@@ -228,7 +228,7 @@ html_theme_options = {
 # suggest edit link
 # remark: {{ file_name }} is mandatory in "edit_page_url_template"
 html_context = {  # TODO: verify html_context usage in plone-sphinx-theme
-    "edit_page_url_template": "https://plone-sphinx-theme.readthedocs.io/contributing/index.html?{{ file_name }}#making-contributions-on-github",
+    "edit_page_url_template": "https://github.com/plone/plone-sphinx-theme/edit/main/docs/?{{ file_name }}",
 }
 
 # Announce that we have an opensearch plugin

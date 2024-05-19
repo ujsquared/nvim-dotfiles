@@ -8,6 +8,22 @@
 
 <!-- towncrier release notes start -->
 
+0.0.3 (2024-05-19)
+------------------
+
+### Internal changes:
+
+- Add .gitkeep to news directory to preserve it upon releases. @stevepiercy ([Issue #garden](https://github.com/plone/plone-sphinx-theme/garden))
+- Fix CHANGES.md content for automatic updates upon releases. @stevepiercy ([Issue #garden1](https://github.com/plone/plone-sphinx-theme/garden1))
+- Add GitHub action to deploy documentation to Read the Docs. @stevepiercy ([Issue #garden2](https://github.com/plone/plone-sphinx-theme/garden2))
+- Add pull request preview on Read the Docs. @stevepiercy ([Issue #garden3](https://github.com/plone/plone-sphinx-theme/garden3))
+- Clean up conf.py. @stevepiercy ([Issue #garden4](https://github.com/plone/plone-sphinx-theme/garden4))
+
+### Documentation:
+
+- Fix glossary syntax. @stevepiercy ([Issue #glossary](https://github.com/plone/plone-sphinx-theme/glossary))
+
+
 ## 0.0.2 (2024-05-06)
 
 ### New features:

@@ -228,12 +228,12 @@ html_theme_options = {
 # suggest edit link
 # remark: {{ file_name }} is mandatory in "edit_page_url_template"
 html_context = {  # TODO: verify html_context usage in plone-sphinx-theme
-    "edit_page_url_template": "https://6.docs.plone.org/contributing/index.html?{{ file_name }}#making-contributions-on-github",
+    "edit_page_url_template": "https://github.com/plone/plone-sphinx-theme/edit/main/docs/{{ file_name }}",
 }
 
 # Announce that we have an opensearch plugin
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_use_opensearch
-html_use_opensearch = "https://6.docs.plone.org"  # TODO: Confirm usage of opensearch in theme
+html_use_opensearch = "https://plone-sphinx-theme.readthedocs.io"  # TODO: Confirm usage of opensearch in theme
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -274,9 +274,10 @@ autodoc_class_signature = "separated"
 # -- Options for sphinx_sitemap to html -----------------------------
 
 # Used by sphinx_sitemap to generate a sitemap
-html_baseurl = "https://6.docs.plone.org/"
+html_baseurl = "https://plone-sphinx-theme.readthedocs.io/"
 # https://sphinx-sitemap.readthedocs.io/en/latest/advanced-configuration.html#customizing-the-url-scheme
 sitemap_url_scheme = "{link}"
+sitemap_filename = "sitemap-custom.xml"
 
 # -- Options for myST markdown conversion to html -----------------------------
 
@@ -331,9 +332,9 @@ graphviz_output_format = "svg"
 
 
 # -- OpenGraph configuration ----------------------------------
-ogp_site_url = "https://6.docs.plone.org/"
+ogp_site_url = "https://plone-sphinx-theme.readthedocs.io/"
 ogp_description_length = 200
-ogp_image = "https://6.docs.plone.org/_static/Plone_logo_square.png"
+ogp_image = "https://plone-sphinx-theme.readthedocs.io/_static/Plone_logo_square.png"
 ogp_site_name = "Plone Sphinx Theme Documentation"
 ogp_type = "website"
 ogp_custom_meta_tags = [

@@ -8,6 +8,13 @@
 
 <!-- towncrier release notes start -->
 
+## 0.0.4 (2024-05-20)
+
+### Internal changes
+
+- Steal towncrier config from Volto. Clean up `CHANGES.md`. @stevepiercy [Issue #18](https://github.com/plone/plone-sphinx-theme/issues/18)
+- Fix towncrier template path. @stevepiercy [Issue #19](https://github.com/plone/plone-sphinx-theme/issues/19)
+
 ## 0.0.3 (2024-05-19)
 
 ### Internal changes:

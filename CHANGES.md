@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 0.0.5 (2024-05-21)
+
+### Internal changes
+
+- Change build-system to use setuptools. Fix manifest. @stevepiercy [Issue #21](https://github.com/plone/plone-sphinx-theme/issues/21)
+
 ## 0.0.4 (2024-05-20)
 
 ### Internal changes

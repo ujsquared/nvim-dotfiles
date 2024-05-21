@@ -119,7 +119,7 @@ directory = "news/"
 filename = "CHANGES.md"
 issue_format = "[Issue #{issue}](https://github.com/plone/plone-sphinx-theme/issues/{issue})"
 start_string = "<!-- towncrier release notes start -->\n"
-template = "../scripts/templates/towncrier_template.jinja"
+template = "scripts/templates/towncrier_template.jinja"
 title_format = "## {version} ({project_date})"
 # First underline is used for version/date header.
 # Second underline is used for the type names (like 'Bug fixes:').

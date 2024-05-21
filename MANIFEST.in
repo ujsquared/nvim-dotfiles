@@ -1,2 +1,16 @@
-include *.yaml
+graft docs
+graft scripts
+graft src/plone_sphinx_theme
+graft styles/Vocab
+
 include .vale.ini
+include .readthedocs.yaml
+include CHANGES.md
+include Makefile
+include package.json
+include requirements-docs.txt requirements-initial.txt
+include webpack.config.js
+
+prune news
+prune styles/Microsoft
+global-exclude *.pyc

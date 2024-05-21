@@ -8,6 +8,4 @@ __pycache__
 /node_modules
 /package-lock.json
 /pyvenv.cfg
-/src/plone_sphinx_theme/theme/plone-sphinx-theme/static/scripts/
-/src/plone_sphinx_theme/theme/plone-sphinx-theme/static/styles/
 /styles/Microsoft/

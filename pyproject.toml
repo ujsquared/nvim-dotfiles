@@ -115,35 +115,37 @@ theme-name = "plone-sphinx-theme"
 python-file-with-version = "src/plone_sphinx_theme/__init__.py"
 
 [tool.towncrier]
-issue_format = "[Issue #{issue}](https://github.com/plone/plone-sphinx-theme/{issue})"
-filename = "CHANGES.md"
 directory = "news/"
-title_format = "{version} ({project_date})"
+filename = "CHANGES.md"
+issue_format = "[Issue #{issue}](https://github.com/plone/plone-sphinx-theme/issues/{issue})"
+start_string = "<!-- towncrier release notes start -->\n"
+template = "../scripts/templates/towncrier_template.jinja"
+title_format = "## {version} ({project_date})"
 # First underline is used for version/date header.
 # Second underline is used for the type names (like 'Bug fixes:').
-underlines = ["-", ""]
+underlines = ["", "", ""]
 
 [[tool.towncrier.type]]
 directory = "internal"
-name = "Internal changes:"
+name = "Internal changes"
 showcontent = true
 
 [[tool.towncrier.type]]
 directory = "breaking"
-name = "Breaking changes:"
+name = "Breaking changes"
 showcontent = true
 
 [[tool.towncrier.type]]
 directory = "feature"
-name = "New features:"
+name = "New features"
 showcontent = true
 
 [[tool.towncrier.type]]
 directory = "bugfix"
-name = "Bug fixes:"
+name = "Bug fixes"
 showcontent = true
 
 [[tool.towncrier.type]]
 directory = "documentation"
-name = "Documentation:"
+name = "Documentation"
 showcontent = true

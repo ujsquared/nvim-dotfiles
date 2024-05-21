@@ -8,8 +8,7 @@
 
 <!-- towncrier release notes start -->
 
-0.0.3 (2024-05-19)
-------------------
+## 0.0.3 (2024-05-19)
 
 ### Internal changes:
 

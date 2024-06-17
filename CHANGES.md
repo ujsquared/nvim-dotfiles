@@ -10,6 +10,8 @@
 
 ## 0.0.9 (2024-06-17)
 
+- Clean up release. @stevepiercy
+
 ## 0.0.8 (2024-06-17)
 
 ### New features

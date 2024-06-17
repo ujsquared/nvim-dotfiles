@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 0.0.6 (2024-06-17)
+
+### New features
+
+- Add support for Mermaid Sphinx extension. @stevepiercy [Issue #22](https://github.com/plone/plone-sphinx-theme/issues/22)
+
 ## 0.0.5 (2024-05-21)
 
 ### Internal changes

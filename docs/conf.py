@@ -332,6 +332,10 @@ intersphinx_mapping = {
 graphviz_output_format = "svg"
 
 
+# -- Mermaid configuration ----------------------------------
+mermaid_version = "10.9.1"
+
+
 # -- OpenGraph configuration ----------------------------------
 ogp_site_url = "https://plone-sphinx-theme.readthedocs.io/"
 ogp_description_length = 200

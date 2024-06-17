@@ -8,4 +8,5 @@ __pycache__
 /node_modules
 /package-lock.json
 /pyvenv.cfg
+/src/plone_sphinx_theme.egg-info/
 /styles/Microsoft/

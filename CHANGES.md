@@ -8,6 +8,8 @@
 
 <!-- towncrier release notes start -->
 
+## 0.0.7 (2024-06-17)
+
 ## 0.0.6 (2024-06-17)
 
 ### New features

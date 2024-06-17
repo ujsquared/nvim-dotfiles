@@ -12,6 +12,10 @@ keywords = [
 dynamic = ["version"]
 readme = "README.md"
 
+[tool.setuptools.dynamic]
+version = {attr = "plone_sphinx_theme.VERSION"}
+#readme = {file = ["README.rst", "USAGE.rst"]}
+
 requires-python = ">=3.9"
 dependencies = [
   "sphinx>=7",

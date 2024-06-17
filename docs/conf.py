@@ -71,6 +71,7 @@ extensions = [
     "sphinx_sitemap",
     "sphinxcontrib.httpdomain",  # plone.restapi
     "sphinxcontrib.httpexample",  # plone.restapi
+    "sphinxcontrib.mermaid",
     "sphinxcontrib.video",
     "sphinxext.opengraph",
 ]

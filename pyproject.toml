@@ -12,10 +12,6 @@ keywords = [
 dynamic = ["version"]
 readme = "README.md"
 
-[tool.setuptools.dynamic]
-version = {attr = "plone_sphinx_theme.__version__"}
-#readme = {file = ["README.rst", "USAGE.rst"]}
-
 requires-python = ">=3.9"
 dependencies = [
   "sphinx>=7",
@@ -153,3 +149,6 @@ showcontent = true
 directory = "documentation"
 name = "Documentation"
 showcontent = true
+
+[tool.setuptools.dynamic]
+version = {attr = "plone_sphinx_theme.__version__"}

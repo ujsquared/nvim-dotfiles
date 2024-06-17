@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 0.0.10 (2024-06-17)
+
+### Internal changes
+
+- Unpin mermaid and specify which version of the JavaScript library to load. @stevepiercy [Issue #23](https://github.com/plone/plone-sphinx-theme/issues/23)
+
 ## 0.0.9 (2024-06-17)
 
 - Clean up release. @stevepiercy

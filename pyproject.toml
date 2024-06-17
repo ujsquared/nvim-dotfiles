@@ -13,7 +13,7 @@ dynamic = ["version"]
 readme = "README.md"
 
 [tool.setuptools.dynamic]
-version = {attr = "plone_sphinx_theme.VERSION"}
+version = {attr = "plone_sphinx_theme.__version__"}
 #readme = {file = ["README.rst", "USAGE.rst"]}
 
 requires-python = ">=3.9"

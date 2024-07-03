@@ -6,8 +6,13 @@ on:
       - opened
     # Execute this action only on PRs that touch
     # documentation files.
-    # paths:
-    #   - "docs/**"
+    paths:
+      - "docs/**"
+      - "styles/**"
+      - .readthedocs.yaml
+      - .vale.ini
+      - Makefile
+      - requirements-docs.txt
 
 permissions:
   pull-requests: write

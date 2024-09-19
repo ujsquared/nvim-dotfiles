@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 0.0.13 (2024-09-19)
+
+### Bug fixes
+
+- Remove support for Mermaid. See https://github.com/mgaitan/sphinxcontrib-mermaid/issues/137. @stevepiercy [Issue #27](https://github.com/plone/plone-sphinx-theme/issues/27)
+
 ## 0.0.12 (2024-09-19)
 
 ### Bug fixes

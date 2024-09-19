@@ -12,7 +12,7 @@ sphinx-reredirects
 sphinx-sitemap
 sphinxcontrib.httpdomain
 sphinxcontrib.httpexample
-sphinxcontrib-mermaid
+# sphinxcontrib-mermaid  # See https://github.com/mgaitan/sphinxcontrib-mermaid/issues/137
 sphinxcontrib-video
 sphinxext-opengraph
 vale==2.30.0

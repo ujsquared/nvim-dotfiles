@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 0.0.12 (2024-09-19)
+
+### Bug fixes
+
+- Update parent theme, and compile for dist. @stevepiercy [Issue #26](https://github.com/plone/plone-sphinx-theme/issues/26)
+
 ## 0.0.11 (2024-09-19)
 
 ### Bug fixes

@@ -1,8 +1,0 @@
-div.docutils.container {
-  z-index: $zindex-middle;
-  position: relative;
-  @media (min-width: $breakpoint-lg) {
-    max-width: $content-fullwidth-width;
-    width: $content-fullwidth-width;
-  }
-}

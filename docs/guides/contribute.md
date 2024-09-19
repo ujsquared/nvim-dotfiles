@@ -97,6 +97,16 @@ These files are copied from the parent theme whenever there is an update to it.
 See {ref}`update-parent-theme-styles` for details.
 ```
 
+
+### Compile static assets
+
+After editing any of the static assets, you need to compile them.
+
+```shell
+stb compile
+```
+
+
 (update-parent-theme-styles)=
 
 #### Update parent theme styles

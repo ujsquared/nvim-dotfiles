@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 0.0.11 (2024-09-19)
+
+### Bug fixes
+
+- Remove style that causes code blocks in sphinxcontrib.httpexample to blow out off-screen. @stevepiercy [Issue #25](https://github.com/plone/plone-sphinx-theme/issues/25)
+
 ## 0.0.10 (2024-06-17)
 
 ### Internal changes

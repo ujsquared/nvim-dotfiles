@@ -1,1 +1,0 @@
-Override sphinxcontrib-httpexample tabs background color. @stevepiercy

@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 0.0.15 (2024-09-19)
+
+### New features
+
+- Override sphinxcontrib-httpexample tabs background color for sure this time. @stevepiercy [Issue #29](https://github.com/plone/plone-sphinx-theme/issues/29)
+
 ## 0.0.14 (2024-09-19)
 
 ### New features

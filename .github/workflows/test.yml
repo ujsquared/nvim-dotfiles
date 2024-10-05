@@ -40,10 +40,10 @@ jobs:
         run: pip install -r requirements-docs.txt
 
       - name: Check for broken links
-        run: make docs-linkcheckbroken
+        run: make linkcheckbroken
 
       - name: Build HTML documentation
-        run: make docs-html
+        run: make html
 
       - name: Run vale
-        run: make docs-vale VALEOPTS="--minAlertLevel='warning'"
+        run: make vale VALEOPTS="--minAlertLevel='warning'"

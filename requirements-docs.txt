@@ -15,4 +15,4 @@ sphinxcontrib.httpexample
 # sphinxcontrib-mermaid  # See https://github.com/mgaitan/sphinxcontrib-mermaid/issues/137
 sphinxcontrib-video
 sphinxext-opengraph
-vale==2.30.0
+vale>=3.0.0,<4.0.0

@@ -23,9 +23,9 @@ To develop your own theme based on Plone Sphinx Theme, see {doc}`develop`.
 
 ## Grant permission to publish
 
-Before you contribute, you must give permission to publish your contribution according to the license we use.
+Before you contribute, you must give permission to publish your contribution according to the license that Plone uses.
 You may give that permission by signing the [Plone Contributor Agreement](https://plone.org/foundation/contributors-agreement).
-It is a one-time only process.
+It's a one-time only process.
 
 The Plone Sphinx Theme Documentation is licensed under the [GNU General Public License, version 2 (GPLv2)](https://github.com/plone/plone-sphinx-theme/blob/main/LICENSE.md).
 A copy of the license is included in the root of this repository.

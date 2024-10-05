@@ -64,7 +64,7 @@ doc = [
   "sphinxcontrib.httpexample",
   "sphinxcontrib-video",
   "sphinxext-opengraph",
-  "vale==2.30.0",
+  "vale",
 #  Commented from Sphinx Book Theme.
 #  Uncomment to install, then configure in conf.py.
 #    "ablog",

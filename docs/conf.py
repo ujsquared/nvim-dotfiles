@@ -88,6 +88,7 @@ linkcheck_ignore = [
     r"http://0.0.0.0",
     r"http://127.0.0.1",
     r"http://localhost",
+    r"http://someurl",
     r"http://yoursite",
     # Ignore file downloads
     r"^/_static/",
@@ -105,6 +106,7 @@ linkcheck_ignore = [
     r"https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi",  # TODO retest with latest Sphinx when upgrading theme. chromewebstore recently changed its URL and has "too many redirects".
     r"https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd",  # TODO retest with latest Sphinx when upgrading theme. chromewebstore recently changed its URL and has "too many redirects".
     r"https://stackoverflow.com",  # volto and documentation  # TODO retest with latest Sphinx.
+    r"https://unsplash.com/",  # plone-sphinx-theme
     r"https://web.archive.org/",  # volto
     r"https://www.youtube.com/playlist",  # volto, TODO remove after installing sphinxcontrib.youtube
 ]

@@ -27,7 +27,7 @@ Before you contribute, you must give permission to publish your contribution acc
 You may give that permission by signing the [Plone Contributor Agreement](https://plone.org/foundation/contributors-agreement).
 It's a one-time only process.
 
-The Plone Sphinx Theme Documentation is licensed under the [GNU General Public License, version 2 (GPLv2)](https://github.com/plone/plone-sphinx-theme/blob/main/LICENSE.md).
+The Plone Sphinx Theme Documentation is licensed under the [GNU General Public License, version 2 (GPLv2)](https://github.com/plone/plone-sphinx-theme/blob/main/LICENSE).
 A copy of the license is included in the root of this repository.
 
 A volunteer member of the Plone Foundation will review your signed agreement.

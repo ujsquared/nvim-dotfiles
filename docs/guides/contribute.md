@@ -15,7 +15,7 @@ It also covers the essential commands for building and previewing
 ## Prerequisites
 
 -   A supported version of Python, as specified on this documentation's {doc}`home page <../index>`
--   GNU Make
+-   {term}`GNU Make`
 
 
 ## Install Plone Sphinx Theme
@@ -54,7 +54,7 @@ See {ref}`update-kitchen-sink-demonstration` for details.
 
 ### Update Kitchen Sink demonstration
 
-From time to time, the demonstration files for [Sphinx Themes Gallery](https://sphinx-themes.org/) will be updated.
+From time to time, the demonstration files for [Sphinx Themes Gallery](https://sphinx-themes.org/) need to be updated.
 Plone Sphinx Theme uses these files as a demonstration for its styles.
 To copy these updated files to Plone Sphinx Theme, run the following command.
 
@@ -76,7 +76,7 @@ This section describes how you can change this theme.
 ### Add or edit a template
 
 Templates are pages of Jinja2 code into which components can be inserted.
-Plone Sphinx Theme uses a template, {file}`404.html` to display an HTTP "404 Not Found" response page to visitors when they request a page that does not exist.
+Plone Sphinx Theme uses a template, {file}`404.html` to display an HTTP "404 Not Found" response page to visitors when they request a page that doesn't exist.
 In Plone Sphinx Theme, templates are located in the directory {file}`src/plone_sphinx_theme/theme/plone-sphinx-theme`.
 
 

@@ -13,23 +13,28 @@ Barceloneta
 [Bb]oolean
 buildout
 cacheable
+Code of Conduct
 docstrings
 doctest
 Docutils
 folderish
 fieldset
+Gantt
 getter
 Graphviz
 JavaScript
 jQuery
+Kitchen Sink
 Mockup
 multilanguage
 multiversion
+MyST
 Netlify
 npm
 nvm
 Pastanaga
 Plone
+Plone Sphinx Theme
 pluggab(le|ility)
 programatically
 [Pp]ortlet

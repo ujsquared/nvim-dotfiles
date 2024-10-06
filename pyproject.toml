@@ -97,7 +97,7 @@ Repository = "https://github.com/plone/plone-sphinx-theme"
 Documentation = "https://github.com/plone/plone-sphinx-theme"
 
 [build-system]
-requires = ["setuptools >= 69.5"]
+requires = ["setuptools >= 74.0.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.sphinx-theme-builder]

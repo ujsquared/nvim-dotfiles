@@ -59,6 +59,7 @@ extensions = [
     "notfound.extension",
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",  # plone.api
+    "sphinx.ext.doctest",  # plone.api
     "sphinx.ext.graphviz",
     "sphinx.ext.ifconfig",
     "sphinx.ext.intersphinx",
@@ -96,6 +97,7 @@ linkcheck_ignore = [
     r"https://github.com/orgs/plone/teams/",  # requires auth
     r"https://github.com/plone/documentation/issues/new/choose",  # requires auth
     r"https://github.com/plone/volto/issues/new/choose",  # requires auth
+    r"https://github.com/plone/plone-sphinx-theme/issues/new",  # requires auth
     # Ignore github.com pages with anchors
     r"https://github.com/.*#.*",
     # Ignore other specific anchors
@@ -406,9 +408,9 @@ def source_replace(app, docname, source):
 # Dict of replacements.
 source_replacements = {
     "{PLONE_BACKEND_MINOR_VERSION}": "6.0",
-    "{PLONE_BACKEND_PATCH_VERSION}": "6.0.11",
+    "{PLONE_BACKEND_PATCH_VERSION}": "6.0.13",
     "{NVM_VERSION}": "0.39.5",
-    "{SUPPORTED_PYTHON_VERSIONS}": "3.8, 3.9, 3.10, 3.11, or 3.12",
+    "{SUPPORTED_PYTHON_VERSIONS}": "3.9, 3.10, 3.11, or 3.12",
 }
 
 

@@ -12,9 +12,10 @@ myst:
 This document describes how to install Plone Sphinx Theme for contributing code to this project, and what you can modify.
 It also covers the essential commands for building and previewing
 
+
 ## Prerequisites
 
--   A supported version of Python, as specified on this documentation's {doc}`home page <../index>`
+-   Python {SUPPORTED_PYTHON_VERSIONS}
 -   {term}`GNU Make`
 
 
@@ -103,7 +104,7 @@ See {ref}`update-parent-theme-styles` for details.
 After editing any of the static assets, you need to compile them.
 
 ```shell
-stb compile
+make compile
 ```
 
 
@@ -124,3 +125,14 @@ make sbt-styles-update
 
 Plone Sphinx Theme uses webpack to compile a JavaScript file for its theme.
 You can edit these files located in the directory {file}`src/plone_sphinx_theme/assets/scripts`.
+
+
+## Release
+
+To release Plone Sphinx Theme, use the following command.
+
+```shell
+make release
+```
+
+This command runs [`zest.releaser`](https://pypi.org/project/zest.releaser/) to make a full release.

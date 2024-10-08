@@ -11,13 +11,7 @@ keywords = [
 ]
 dynamic = ["version"]
 readme = "README.md"
-
-requires-python = ">=3.9"
-dependencies = [
-  "sphinx>=7",
-  "sphinx-book-theme>=1.1.2",
-]
-
+requires-python = ">=3.9,<3.13"
 license = { file = "LICENSE" }
 maintainers = [
   { name = "Steve Piercy", email = "spiercy@plone.org" },
@@ -39,24 +33,24 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
 ]
 
+dependencies = [
+  "myst-parser==3.0.1", # Supports Python 3.9-3.12, which is what we need for Plone 6.0. Consider bumping for Plone 6.1.
+  "sphinx==7.4.7", # Supports Python 3.9-3.12, which is what we need for Plone 6.0. Consider bumping for Plone 6.1.
+  "sphinx-book-theme",
+]
+
 [project.optional-dependencies]
 #code_style = [
 #    "pre-commit"
 #]
-initial = [
-  # From https://dist.plone.org/release/6-latest/constraints.txt
-  "pip==24.0",
-  "setuptools==69.5.1",
-  "wheel==0.43.0",
-]
-doc = [
+docs = [
   "graphviz",
   "linkify-it-py",
-  "myst-parser",
   "sphinx-autobuild",
   "sphinx-copybutton",
   "sphinx-design",
   "sphinx-examples",
+#  "sphinxcontrib-mermaid==0.9.2",  # See https://github.com/mgaitan/sphinxcontrib-mermaid/issues/137
   "sphinx-notfound-page",
   "sphinx-reredirects",
   "sphinx-sitemap",
@@ -64,7 +58,7 @@ doc = [
   "sphinxcontrib.httpexample",
   "sphinxcontrib-video",
   "sphinxext-opengraph",
-  "vale",
+
 #  Commented from Sphinx Book Theme.
 #  Uncomment to install, then configure in conf.py.
 #    "ablog",
@@ -84,7 +78,11 @@ doc = [
 #    "sphinxcontrib-youtube",
 ]
 dev = [
+  # Development
   "sphinx-theme-builder[cli]",
+  # Test
+  "vale",
+  # Release
   "zest.releaser[recommended]",
   "zestreleaser.towncrier",
 ]
@@ -94,10 +92,10 @@ dev = [
 
 [project.urls]
 Repository = "https://github.com/plone/plone-sphinx-theme"
-Documentation = "https://github.com/plone/plone-sphinx-theme"
+Documentation = "https://plone-sphinx-theme.readthedocs.io/"
 
 [build-system]
-requires = ["setuptools >= 74.0.0"]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.sphinx-theme-builder]

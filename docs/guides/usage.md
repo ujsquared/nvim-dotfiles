@@ -20,7 +20,7 @@ To develop your own theme based upon Plone Sphinx Theme, see {doc}`develop`.
 
 ## Prerequisites
 
--  Install a supported version of Python, as specified on this documentation's {doc}`home page <../index>`.
+-   Python {SUPPORTED_PYTHON_VERSIONS}.
 -   Create a Python virtual environment for your project, and optionally activate it.
     The following commands assume you have activated your virtual environment.
 
@@ -36,13 +36,13 @@ To develop your own theme based upon Plone Sphinx Theme, see {doc}`develop`.
     ```toml
     [project.optional-dependencies]
     
-    doc = [
+    docs = [
       "plone-sphinx-theme",
     ]
     ```
     ````
     
-    ````{tab-item} requirements-doc.txt
+    ````{tab-item} requirements-docs.txt
     :sync: key2
     ```text
     plone-sphinx-theme
@@ -58,14 +58,14 @@ To develop your own theme based upon Plone Sphinx Theme, see {doc}`develop`.
     ````{tab-item} pyproject.toml
     :sync: key1
     ```shell
-    pip install my_project[doc]
+    pip install my_project[docs]
     ```
     ````
     
-    ````{tab-item} requirements-doc.txt
+    ````{tab-item} requirements-docs.txt
     :sync: key2
     ```shell
-    pip install -r requirements-doc.txt
+    pip install -r requirements-docs.txt
     ```
     ````
     

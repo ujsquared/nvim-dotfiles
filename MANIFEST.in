@@ -1,14 +1,14 @@
 graft docs
 graft scripts
 graft src/plone_sphinx_theme
-graft styles/Vocab
+graft styles/config/vocabularies
 
 include .vale.ini
 include .readthedocs.yaml
 include CHANGES.md
 include Makefile
 include package.json
-include requirements-docs.txt requirements-initial.txt
+include requirements.txt requirements-dev.txt requirements-docs.txt
 include webpack.config.js
 
 prune news

@@ -7,8 +7,8 @@ SPHINXOPTS      ?=
 PAPER           ?=
 
 # Internal variables.
-SPHINXBUILD     = "$(realpath bin/sphinx-build)"
-SPHINXAUTOBUILD = "$(realpath bin/sphinx-autobuild)"
+SPHINXBUILD     = "$(realpath .venv/bin/sphinx-build)"
+SPHINXAUTOBUILD = "$(realpath .venv/bin/sphinx-autobuild)"
 DOCS_DIR        = ./docs/
 BUILDDIR        = ../_build
 PAPEROPT_a4     = -D latex_paper_size=a4
@@ -26,33 +26,32 @@ help:  # This help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 # environment management
-.PHONY: bin/python
-bin/python:  ## Create Python virtual environment and install package requirements
-	python3 -m venv .
-	bin/pip install --upgrade pip setuptools uv wheel
-	bin/uv pip install -r requirements.txt
+.venv/bin/python:  ## Create Python virtual environment and install package requirements
+	python3 -m venv .venv
+	.venv/bin/pip install --upgrade pip setuptools uv wheel
+	.venv/bin/uv pip install -r requirements.txt
 
 .PHONY: docs
-docs: bin/python  ## Install documentation requirements into Python virtual environment
-	bin/uv pip install -r requirements-docs.txt -e .
+docs: .venv/bin/python  ## Install documentation requirements into Python virtual environment
+	.venv/bin/uv pip install -r requirements-docs.txt -e .
 
 .PHONY: dev
 dev: docs  ## Install development requirements into Python virtual environment
-	bin/uv pip install -r requirements-dev.txt -e .
+	.venv/bin/uv pip install -r requirements-dev.txt -e .
 
 .PHONY: update-deps
 update-deps:  ## Update
-	bin/uv pip install --upgrade pip setuptools uv wheel
-	bin/uv pip compile --upgrade pyproject.toml -o requirements.txt
-	bin/uv pip compile --upgrade pyproject.toml \
+	.venv/bin/uv pip install --upgrade pip setuptools uv wheel
+	.venv/bin/uv pip compile --upgrade pyproject.toml -o requirements.txt
+	.venv/bin/uv pip compile --upgrade pyproject.toml \
 		--extra docs -o requirements-docs.txt
-	bin/uv pip compile --upgrade pyproject.toml \
+	.venv/bin/uv pip compile --upgrade pyproject.toml \
 		--extra docs --extra dev -o requirements-dev.txt
 
 .PHONY: init
 init: clean clean-python docs  ## Clean docs build directory and initialize Python virtual environment
-	bin/uv pip install -r requirements.txt -r requirements-docs.txt -r requirements-dev.txt -e .
-	bin/uv pip check
+	.venv/bin/uv pip install -r requirements.txt -r requirements-docs.txt -r requirements-dev.txt -e .
+	.venv/bin/uv pip check
 
 .PHONY: clean
 clean:  ## Clean docs build directory
@@ -60,12 +59,12 @@ clean:  ## Clean docs build directory
 
 .PHONY: clean-python
 clean-python: clean
-	rm -rf ./bin/ ./lib/ ./lib64 ./include ./pyvenv.cfg
+	rm -rf .venv/
 # /environment management
 
 # documentation builders
 .PHONY: html
-html: bin/python  ## Build html
+html: .venv/bin/python  ## Build html
 	cd $(DOCS_DIR) && $(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
@@ -119,8 +118,8 @@ linkcheckbroken: docs  ## Run linkcheck and show only broken links
 
 .PHONY: vale
 vale: docs dev  ## Run Vale style, grammar, and spell checks
-	bin/vale sync
-	bin/vale --no-wrap $(VALEOPTS) $(VALEFILES)
+	.venv/bin/vale sync
+	.venv/bin/vale --no-wrap $(VALEOPTS) $(VALEFILES)
 	@echo
 	@echo "Vale is finished; look for any errors in the above output."
 
@@ -141,19 +140,19 @@ html_meta: docs  ## Add meta data headers to all Markdown pages
 
 .PHONY: kitchen-sink-update
 kitchen-sink-update:  ## Copy Kitchen Sink documentation files to Plone Sphinx Theme
-	bin/python scripts/kitchen_sink_update.py
+	.venv/bin/python scripts/kitchen_sink_update.py
 
 .PHONY: sbt-styles-update
 sbt-styles-update:  ## Copy Sphinx Book Theme styles to Plone Sphinx Theme
-	bin/python scripts/sbt_styles_update.py
+	.venv/bin/python scripts/sbt_styles_update.py
 
 .PHONY: serve
 serve:  ## Compile static assets, build and serve the docs, and reload the browser on changes
-	bin/stb serve docs/
+	.venv/bin/stb serve docs/
 
 .PHONY: compile
 compile:  ## Compile static assets
-	bin/stb compile
+	.venv/bin/stb compile
 
 .PHONY: rtd-pr-preview
 rtd-pr-preview: docs  ## Build pull request preview on Read the Docs
@@ -161,7 +160,7 @@ rtd-pr-preview: docs  ## Build pull request preview on Read the Docs
 
 .PHONY: release
 release: dev compile  ## Release with zest.releaser
-	bin/fullrelease
+	.venv/bin/fullrelease
 
 .PHONY: all
 all: clean vale linkcheck html  ## Clean docs build, then run vale and linkcheck, and build html

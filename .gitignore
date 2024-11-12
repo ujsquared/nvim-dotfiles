@@ -1,13 +1,10 @@
 __pycache__
 /.lock
 /.nodeenv
+/.venv/
 /_build
-/bin
 /dist
-/include
-/lib
 /node_modules
 /package-lock.json
-/pyvenv.cfg
 /src/plone_sphinx_theme.egg-info/
 /styles/Microsoft/

@@ -8,6 +8,22 @@
 
 <!-- towncrier release notes start -->
 
+## 0.2.0 (2024-11-11)
+
+### Internal changes
+
+- Adapt Makefile to use uv's preferred virtual environment location of `/.venv/`. @stevepiercy [Issue #34](https://github.com/plone/plone-sphinx-theme/issues/34)
+- Update project requirements. @stevepiercy [Issue #35](https://github.com/plone/plone-sphinx-theme/issues/35)
+
+### New features
+
+- Update styles and configuration to latest. @stevepiercy
+  - Update styles from upstream Sphinx Book Theme.
+  - In todo directive, replace pencil icon with a clipboard list icon.
+  - For video directive, limit the width to 100% of the page content container.
+  - Add YouTube social icon to configuration.
+  - Rename Twitter social icon to X (formerly Twitter). [Issue #36](https://github.com/plone/plone-sphinx-theme/issues/36)
+
 ## 0.1.0 (2024-10-08)
 
 ### New features

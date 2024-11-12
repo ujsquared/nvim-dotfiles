@@ -1,1 +1,0 @@
-Adapt Makefile to use uv's preferred virtual environment location of `/.venv/`. @stevepiercy

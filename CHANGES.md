@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 0.2.1 (2024-11-11)
+
+### New features
+
+- Move the icon links from the primary sidebar to the page content footer. @stevepiercy [Issue #37](https://github.com/plone/plone-sphinx-theme/issues/37)
+
 ## 0.2.0 (2024-11-11)
 
 ### Internal changes

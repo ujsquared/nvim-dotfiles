@@ -5,12 +5,13 @@
  */
 
 // Use sphinx-book-theme SCSS as base
-@import "sphinx-book-theme/index";
+@use "sphinx-book-theme/index";
 
 // Re-usable components across the theme
-@import "components/title";
+@use "components/icon-links";
+@use "components/title";
 
-@import "content/code";
+@use "content/code";
 
-@import "extensions/todo";
-@import "extensions/video";
+@use "extensions/todo";
+@use "extensions/video";

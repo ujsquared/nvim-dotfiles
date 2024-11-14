@@ -1,5 +1,5 @@
 """
-A Twitter Bootstrap-based Sphinx theme for documentation of Plone packages and projects, inheriting from Sphinx Book Theme and PyData Sphinx Theme.
+A Bootstrap-based Sphinx theme for documentation of Plone packages and projects, inheriting from Sphinx Book Theme and PyData Sphinx Theme.
 """
 import os
 from pathlib import Path

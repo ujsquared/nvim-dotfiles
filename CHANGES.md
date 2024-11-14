@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 0.3.0 (2024-11-14)
+
+### New features
+
+- Restore support for Mermaid. @stevepiercy [Issue #38](https://github.com/plone/plone-sphinx-theme/issues/38)
+
 ## 0.2.1 (2024-11-11)
 
 ### New features

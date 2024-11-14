@@ -72,7 +72,7 @@ extensions = [
     "sphinx_sitemap",
     "sphinxcontrib.httpdomain",  # plone.restapi
     "sphinxcontrib.httpexample",  # plone.restapi
-    # "sphinxcontrib.mermaid",
+    "sphinxcontrib.mermaid",
     "sphinxcontrib.video",
     "sphinxext.opengraph",
 ]
@@ -358,7 +358,7 @@ graphviz_output_format = "svg"
 
 
 # -- Mermaid configuration ----------------------------------
-# mermaid_version = "10.9.1"
+mermaid_version = "11.2.0"
 
 
 # -- OpenGraph configuration ----------------------------------

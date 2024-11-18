@@ -8,6 +8,16 @@
 
 <!-- towncrier release notes start -->
 
+## 0.3.1 (2024-11-18)
+
+### New features
+
+- Add VSCode editor settings. @stevepiercy [Issue #39](https://github.com/plone/plone-sphinx-theme/issues/39)
+
+### Documentation
+
+- Add documentation for how to override build configuration options. @stevepiercy [Issue #40](https://github.com/plone/plone-sphinx-theme/issues/40)
+
 ## 0.3.0 (2024-11-14)
 
 ### New features

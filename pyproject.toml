@@ -57,6 +57,7 @@ docs = [
   "sphinxcontrib.httpdomain",
   "sphinxcontrib.httpexample",
   "sphinxcontrib-video",
+  "sphinxcontrib-youtube",
   "sphinxext-opengraph",
 
 #  Commented from Sphinx Book Theme.

@@ -9,6 +9,7 @@ include CHANGES.md
 include Makefile
 include package.json
 include requirements.txt requirements-dev.txt requirements-docs.txt
+include .vscode/settings.json
 include webpack.config.js
 
 prune news

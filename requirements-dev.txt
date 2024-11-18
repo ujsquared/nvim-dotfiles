@@ -139,6 +139,7 @@ requests==2.32.3
     #   pyroma
     #   requests-toolbelt
     #   sphinx
+    #   sphinxcontrib-youtube
     #   twine
     #   zest-releaser
 requests-toolbelt==1.0.0
@@ -183,6 +184,7 @@ sphinx==7.4.7
     #   sphinxcontrib-httpexample
     #   sphinxcontrib-mermaid
     #   sphinxcontrib-video
+    #   sphinxcontrib-youtube
     #   sphinxext-opengraph
 sphinx-autobuild==2024.10.3
     # via
@@ -227,6 +229,8 @@ sphinxcontrib-qthelp==2.0.0
 sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
 sphinxcontrib-video==0.3.1
+    # via plone-sphinx-theme (pyproject.toml)
+sphinxcontrib-youtube==1.4.1
     # via plone-sphinx-theme (pyproject.toml)
 sphinxext-opengraph==0.9.1
     # via plone-sphinx-theme (pyproject.toml)

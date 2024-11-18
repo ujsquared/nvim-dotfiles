@@ -54,5 +54,5 @@ These extensions are built in and can be activated by respective entries in the 
     It's used by Plone's {doc}`plone:plone.restapi/docs/source/index`.
 -   [`sphinxcontrib.mermaid`](https://pypi.org/project/sphinxcontrib-mermaid/) allows you to embed [Mermaid](https://mermaid.js.org/) graphs in your documents, including general flowcharts, sequence diagrams, and Gantt charts.
 -   [`sphinxcontrib.video`](https://pypi.org/project/sphinxcontrib-video/) allows you to embed local videos as defined by the HTML5 standard.
--   [`sphinxcontrib.youtube`](https://pypi.org/project/sphinxcontrib-video/) allows you to embed remotely hosted videos from [YouTube](https://www.youtube.com/), [Vimeo](https://vimeo.com/, or [PeerTube](https://joinpeertube.org/).
+-   [`sphinxcontrib.youtube`](https://pypi.org/project/sphinxcontrib-video/) allows you to embed remotely hosted videos from [YouTube](https://www.youtube.com/), [Vimeo](https://vimeo.com/), or [PeerTube](https://joinpeertube.org/).
 -   [`sphinxext.opengraph`](https://pypi.org/project/sphinxext-opengraph/) generates [OpenGraph metadata](https://ogp.me/).

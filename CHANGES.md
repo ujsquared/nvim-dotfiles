@@ -8,6 +8,13 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0 (2024-11-19)
+
+### New features
+
+- Add support for sphinxcontrib-youtube. @stevepiercy [Issue #41](https://github.com/plone/plone-sphinx-theme/issues/41)
+- Pin dependencies to resolve primary sidebar display toggle. This is the first stable release of Plone Sphinx Theme. @stevepiercy [Issue #43](https://github.com/plone/plone-sphinx-theme/issues/43)
+
 ## 0.3.1 (2024-11-18)
 
 ### New features

@@ -19,7 +19,7 @@ from packaging.version import Version
 # -- Project information -----------------------------------------------------
 
 project = "Plone Sphinx Theme Documentation"
-author = "Plone Community"
+author = "Plone community"
 trademark_name = "Plone"
 now = datetime.now()
 year = str(now.year)

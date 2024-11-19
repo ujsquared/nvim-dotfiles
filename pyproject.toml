@@ -20,7 +20,7 @@ authors = [
   { name = "Steve Piercy", email = "spiercy@plone.org" },
 ]
 classifiers = [
-  "Development Status :: 4 - Beta",
+  "Development Status :: 5 - Production/Stable",
   "Framework :: Sphinx",
   "Framework :: Sphinx :: Theme",
   "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
@@ -34,9 +34,11 @@ classifiers = [
 ]
 
 dependencies = [
-  "myst-parser==3.0.1", # Supports Python 3.9-3.12, which is what we need for Plone 6.0. Consider bumping for Plone 6.1.
-  "sphinx==7.4.7", # Supports Python 3.9-3.12, which is what we need for Plone 6.0. Consider bumping for Plone 6.1.
-  "sphinx-book-theme",
+  # Stable pins, see https://github.com/plone/plone-sphinx-theme/issues/42
+  "myst-parser==3.0.1",  # Supports Python 3.9-3.12, which is what we need for Plone 6.0. Consider bumping for Plone 6.1 and when stable pins are upgraded.
+  "pydata-sphinx-theme==0.15.4",
+  "sphinx>=7.4.7,<8",
+  "sphinx-book-theme==1.1.3",
 ]
 
 [project.optional-dependencies]

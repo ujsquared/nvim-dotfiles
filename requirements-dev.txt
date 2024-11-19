@@ -100,6 +100,7 @@ nodeenv==1.9.1
 packaging==24.2
     # via
     #   build
+    #   pydata-sphinx-theme
     #   pyproject-metadata
     #   pyroma
     #   sphinx
@@ -110,8 +111,10 @@ pkginfo==1.10.0
     # via twine
 pycparser==2.22
     # via cffi
-pydata-sphinx-theme==0.16.0
-    # via sphinx-book-theme
+pydata-sphinx-theme==0.15.4
+    # via
+    #   plone-sphinx-theme (pyproject.toml)
+    #   sphinx-book-theme
 pygments==2.18.0
     # via
     #   accessible-pygments
@@ -234,7 +237,7 @@ sphinxcontrib-youtube==1.4.1
     # via plone-sphinx-theme (pyproject.toml)
 sphinxext-opengraph==0.9.1
     # via plone-sphinx-theme (pyproject.toml)
-starlette==0.41.2
+starlette==0.41.3
     # via sphinx-autobuild
 tomli==2.1.0
     # via zestreleaser-towncrier

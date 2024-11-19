@@ -40,9 +40,13 @@ mdurl==0.1.2
 myst-parser==3.0.1
     # via plone-sphinx-theme (pyproject.toml)
 packaging==24.2
-    # via sphinx
-pydata-sphinx-theme==0.16.0
-    # via sphinx-book-theme
+    # via
+    #   pydata-sphinx-theme
+    #   sphinx
+pydata-sphinx-theme==0.15.4
+    # via
+    #   plone-sphinx-theme (pyproject.toml)
+    #   sphinx-book-theme
 pygments==2.18.0
     # via
     #   accessible-pygments

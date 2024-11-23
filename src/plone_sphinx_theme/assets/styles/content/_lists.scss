@@ -1,0 +1,9 @@
+// Override pydata-sphinx-theme list spacing
+ol,
+ul {
+  li > p,
+  li > p:first-child {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}

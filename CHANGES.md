@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.1 (2024-11-22)
+
+### Bug fixes
+
+- Fix line item spacing to allow for paragraphs within a list item. @stevepiercy [Issue #44](https://github.com/plone/plone-sphinx-theme/issues/44)
+
 ## 1.0.0 (2024-11-19)
 
 ### New features

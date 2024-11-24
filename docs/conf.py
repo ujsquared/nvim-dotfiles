@@ -244,6 +244,7 @@ html_theme_options = {
     "repository_branch": "main",
     "repository_url": "https://github.com/plone/plone-sphinx-theme",
     "search_bar_text": "Search",  # TODO: Confirm usage of search_bar_text
+    "show_toc_level": 2,
     "switcher": {
         "json_url": "/_static/switcher.json",
         "version_match": version,

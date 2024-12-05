@@ -17,6 +17,9 @@
 ### Documentation
 
 - Bump the minimum level of page contents sidebar from 1 to 2. @stevepiercy [Issue #45](https://github.com/plone/plone-sphinx-theme/issues/45)
+
+### New features
+
 - Override styles for `menuselection` and `guilabel` from PyData Sphinx Theme. @stevepiercy [Issue #46](https://github.com/plone/plone-sphinx-theme/issues/46)
 
 ## 1.0.1 (2024-11-22)

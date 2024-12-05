@@ -1,0 +1,11 @@
+// Apply the same style to both spans, overriding PyData Sphinx Theme
+span.guilabel,
+span.menuselection {
+  border: 1px solid var(--pst-color-info);
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.4rem;
+  margin: auto 0.1rem;
+  background-color: var(--pst-color-info-bg);
+}

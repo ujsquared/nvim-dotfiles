@@ -8,6 +8,16 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.3 (2024-12-20)
+
+### New features
+
+- Add support for `versionremoved` directive. @stevepiercy [Issue #48](https://github.com/plone/plone-sphinx-theme/issues/48)
+
+### Documentation
+
+- Fix `suppress_warnings` syntax for `SPHINXOPTS`. @stevepiercy [Issue #47](https://github.com/plone/plone-sphinx-theme/issues/47)
+
 ## 1.0.2 (2024-12-05)
 
 ### Internal changes

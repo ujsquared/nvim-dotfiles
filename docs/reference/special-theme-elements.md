@@ -95,3 +95,12 @@ Wow, a note with an image in a margin!
 ````
 `````
 ``````
+
+
+## `versionremoved`
+
+```{versionremoved} v0.1.1
+Here's a version removed message.
+
+We also support *italic*, **bold**, `code`, [links](https://www.sphinx-doc.org/), and more.
+```

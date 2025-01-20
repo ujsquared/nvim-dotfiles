@@ -8,6 +8,16 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.4 (2025-01-19)
+
+### New features
+
+- Shift admonition title icon to the top of the paragraph for multi-line admonition titles. @stevepiercy [Issue #49](https://github.com/plone/plone-sphinx-theme/issues/49)
+
+### Documentation
+
+- Add documentation for development server. @stevepiercy [Issue #49](https://github.com/plone/plone-sphinx-theme/issues/49)
+
 ## 1.0.3 (2024-12-20)
 
 ### New features

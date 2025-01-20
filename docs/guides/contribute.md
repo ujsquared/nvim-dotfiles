@@ -127,9 +127,19 @@ See {ref}`update-parent-theme-styles` for details.
 ```
 
 
+### Build and reload
+
+Compile static assets, build and serve the docs, and reload the browser on changes.
+
+```shell
+make serve
+```
+
+
 ### Compile static assets
 
 After editing any of the static assets, you need to compile them.
+This step is included in the `make serve` command.
 
 ```shell
 make compile

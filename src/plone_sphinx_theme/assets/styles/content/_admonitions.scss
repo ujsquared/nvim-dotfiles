@@ -1,0 +1,17 @@
+/*  Snippets from:
+src/pydata_sphinx_theme/assets/styles/content/_admonitions.scss
+*/
+/**
+ * Admonitions and blocks of styled content.
+ * Admonitions CSS originally inspired by https://squidfunk.github.io/mkdocs-material/getting-started/
+ */
+
+div.admonition,
+.admonition {
+  // Defaults for all admonitions
+  > .admonition-title {
+    &::after {
+      top: 0.5rem;
+    }
+  }
+}

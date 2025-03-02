@@ -430,10 +430,10 @@ def source_replace(app, docname, source):
 
 # Dict of replacements.
 source_replacements = {
-    "{PLONE_BACKEND_MINOR_VERSION}": "6.0",
-    "{PLONE_BACKEND_PATCH_VERSION}": "6.0.13",
+    "{PLONE_BACKEND_MINOR_VERSION}": "6.1",
+    "{PLONE_BACKEND_PATCH_VERSION}": "6.1.0",
     "{NVM_VERSION}": "0.39.5",
-    "{SUPPORTED_PYTHON_VERSIONS}": "3.9, 3.10, 3.11, or 3.12",
+    "{SUPPORTED_PYTHON_VERSIONS}": "3.10, 3.11, 3.12, or 3.13",
 }
 
 

@@ -7,7 +7,7 @@ It is based on [`sphinx-book-theme`](https://sphinx-book-theme.readthedocs.io/en
 
 ## Requirements
 
--   Python 3.9, 3.10, 3.11, or 3.12
+-   Python 3.10, 3.11, 3.12, or 3.13
 -   GNU Make is required only for building the documentation, contributing to, or development of this theme.
 
 

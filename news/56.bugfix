@@ -1,1 +1,0 @@
-Unpin myst-parser to install latest version, bump pin to `sphinx-book-theme==1.1.4` which temporarily pinned `pydata-sphinx-theme==0.15.4`, so other pins are no longer necessary. See #42. @stevepiercy

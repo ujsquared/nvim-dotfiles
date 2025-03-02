@@ -8,6 +8,21 @@
 
 <!-- towncrier release notes start -->
 
+## 1.1.0 (2025-03-02)
+
+### Internal changes
+
+- Drop Python 3.9 support, and add Python 3.13 support. @stevepiercy [Issue #56](https://github.com/plone/plone-sphinx-theme/issues/56)
+
+### Bug fixes
+
+- Restore the height of inline images to the same as that of a line of text. @stevepiercy [Issue #54](https://github.com/plone/plone-sphinx-theme/issues/54)
+- Unpin myst-parser to install latest version, bump pin to `sphinx-book-theme==1.1.4` which temporarily pinned `pydata-sphinx-theme==0.15.4`, so other pins are no longer necessary. See #42. @stevepiercy [Issue #56](https://github.com/plone/plone-sphinx-theme/issues/56)
+
+### Documentation
+
+- Add documentation for how to update dependencies. @stevepiercy [Issue #56](https://github.com/plone/plone-sphinx-theme/issues/56)
+
 ## 1.0.4 (2025-01-19)
 
 ### New features

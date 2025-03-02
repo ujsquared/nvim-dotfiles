@@ -165,6 +165,31 @@ Plone Sphinx Theme uses webpack to compile a JavaScript file for its theme.
 You can edit these files located in the directory {file}`src/plone_sphinx_theme/assets/scripts`.
 
 
+## Update requirements
+
+When you update requirements in {file}`pyproject.toml`, you need to update the requirements files with `uv pip compile`.
+
+Update the {file}`requirements.txt` file.
+
+```shell
+uv pip compile pyproject.toml -o requirements.txt
+```
+
+Update the {file}`requirements-docs.txt` file.
+This requirements file is used to build Plone Sphinx Theme documentation.
+
+```shell
+uv pip compile pyproject.toml --extra docs -o requirements-docs.txt
+```
+
+Update the {file}`requirements-dev.txt` file.
+This requirements file is used to develop Plone Sphinx Theme and preview the theme's documentation.
+
+```shell
+uv pip compile pyproject.toml --extra docs --extra dev -o requirements-dev.txt
+```
+
+
 ## Release
 
 To release Plone Sphinx Theme, use the following command.

@@ -35,7 +35,7 @@ classifiers = [
 
 dependencies = [
   # Stable pins, see https://github.com/plone/plone-sphinx-theme/issues/42
-#  "myst-parser==3.0.1",  # Supports Python 3.9-3.12, which is what we need for Plone 6.0. Consider bumping for Plone 6.1 and when stable pins are upgraded.
+  "myst-parser",
 #  "pydata-sphinx-theme==0.15.4",
 #  "sphinx>=7.4.7,<9",
   "sphinx-book-theme==1.1.4",

@@ -16,6 +16,7 @@ charset-normalizer==3.4.0
     # via requests
 docutils==0.21.2
     # via
+    #   myst-parser
     #   pydata-sphinx-theme
     #   sphinx
 idna==3.10
@@ -23,9 +24,21 @@ idna==3.10
 imagesize==1.4.1
     # via sphinx
 jinja2==3.1.4
-    # via sphinx
+    # via
+    #   myst-parser
+    #   sphinx
+markdown-it-py==3.0.0
+    # via
+    #   mdit-py-plugins
+    #   myst-parser
 markupsafe==3.0.2
     # via jinja2
+mdit-py-plugins==0.4.2
+    # via myst-parser
+mdurl==0.1.2
+    # via markdown-it-py
+myst-parser==4.0.1
+    # via plone-sphinx-theme (pyproject.toml)
 packaging==24.2
     # via
     #   pydata-sphinx-theme
@@ -37,6 +50,8 @@ pygments==2.18.0
     #   accessible-pygments
     #   pydata-sphinx-theme
     #   sphinx
+pyyaml==6.0.2
+    # via myst-parser
 requests==2.32.3
     # via sphinx
 snowballstemmer==2.2.0
@@ -45,6 +60,7 @@ soupsieve==2.6
     # via beautifulsoup4
 sphinx==7.4.7
     # via
+    #   myst-parser
     #   pydata-sphinx-theme
     #   sphinx-book-theme
 sphinx-book-theme==1.1.4

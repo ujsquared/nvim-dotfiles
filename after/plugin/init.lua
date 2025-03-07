@@ -26,3 +26,7 @@ require("colorizer").setup {
   -- all the sub-options of filetypes apply to buftypes
   buftypes = {},
 }
+require('gitblame').setup {
+     --Note how the `gitblame_` prefix is omitted in `setup`
+    enabled = false,
+}

@@ -1,9 +1,9 @@
-require('rose-pine').setup({
+require('vague').setup({
     disable_background=True,
     transparent_background=True
 })
 function ColorMyPencils(color)
-	color = color or "rose-pine"
+	color = color or "vague"
 	vim.cmd.colorscheme(color)
 
 

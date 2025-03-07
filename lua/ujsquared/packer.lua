@@ -21,16 +21,29 @@ return require('packer').startup(function(use)
         })
     end
   }
+  use {
+        "kawre/leetcode.nvim",
+  }
   use { 'iamcco/markdown-preview.nvim', run = 'cd app && npm install' }
+  use {
+    'chentoast/marks.nvim',
+    config = function()
+        require('marks').setup({
+            -- Optional: configure default settings
+        })
+    end
+}
+
+  use {"https://github.com/Weyaaron/nvim-training", pin=true, opts={}}
 
  -- use {'neoclide/coc.nvim', branch = 'release'}
  -- use {"xero/miasma.nvim"}
 --vim.cmd("colorscheme miasma")
   use({
-	  'rose-pine/nvim',
-	  as = 'rose-pine',
+	  'vague2k/vague.nvim',
+	  as = 'vague',
 	  config = function()
-		  vim.cmd('colorscheme rose-pine')
+		  vim.cmd('colorscheme vague')
 	  end})
      --use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	 --use('nvim-treesitter/playground')
@@ -42,10 +55,12 @@ return require('packer').startup(function(use)
         end,
     }
      use('m4xshen/autoclose.nvim')
-     use('github/copilot.vim')
 	 use('thePrimeagen/harpoon')
 	 use('mbbill/undotree')
+	 use('lambdalisue/vim-fern')
+	 use('f-person/git-blame.nvim')
  	 use('tpope/vim-fugitive')
+     use('~/Desktop/karm.nvim')
 	 use {
   'VonHeikemen/lsp-zero.nvim',
   branch = 'v3.x',
@@ -70,6 +85,7 @@ return require('packer').startup(function(use)
     {'jose-elias-alvarez/nvim-lsp-ts-utils'},
     {'saadparwaiz1/cmp_luasnip'},
     {'rafamadriz/friendly-snippets'},
+    {'github/copilot.nvim'},
     {'NvChad/nvim-colorizer.lua'}
   }
 }
@@ -78,12 +94,22 @@ return require('packer').startup(function(use)
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
     "nvim-lualine/lualine.nvim",
-    requires = {'nvim-tree/nvim-web-devicons', opt = ture},
+    requires = {'nvim-tree/nvim-web-devicons', opt = true},
     "hrsh7th/nvim-cmp",
     "hrsh7th/cmp-nvim-lsp",
     "christoomey/vim-tmux-navigator",
     "windwp/nvim-ts-autotag"
 }
+     use({
+  "nvim-neo-tree/neo-tree.nvim",
+  branch = "v3.x",
+  requires = {
+    "nvim-lua/plenary.nvim",
+    "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+    "MunifTanjim/nui.nvim",
+    -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+  }
+})
     use({
         "nvimtools/none-ls.nvim",
         config = function()

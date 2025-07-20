@@ -7,10 +7,21 @@ local on_attach = function(client, bufnr)
     vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)  -- Go to implementation
     vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)  -- Find references
 end
-require("mason").setup()
-require("mason-lspconfig").setup({
-    ensure_installed = {'clangd','lua_ls','cssls','html','ts_ls'}
-})
+-- require("mason").setup()
+--     automatic_enable = {'clangd','lua_ls','cssls','html','ts_ls'}
+-- }}
+require("mason-lspconfig").setup {
+    automatic_enable = {
+        "lua_ls",
+        "vimls",
+        "clangd",
+        "lua_ls",
+        "cssls",
+        "html",
+        "ts_ls",
+        "pyright"
+    }
+}
 -- require("lspconfig").pylsp.setup{
 --     on_attach = on_attach,
 --     capabilities = capabilities,}
@@ -23,6 +34,7 @@ require("lspconfig").tailwindcss.setup{}
 require("lspconfig").pyright.setup{
     on_attach = on_attach,
     flake8 = {enabled = true},
+    black = {enabled = true}
 }
 require('lspconfig').ts_ls.setup{
     on_attach = function (client, bufnr)

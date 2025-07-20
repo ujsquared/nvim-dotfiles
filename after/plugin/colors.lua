@@ -1,9 +1,9 @@
-require('vague').setup({
-    disable_background=True,
-    transparent_background=True
+require('kanagawa').setup({
+    transparent=true,
+    theme = "dragon"
 })
 function ColorMyPencils(color)
-	color = color or "vague"
+	color = color or "kanagawa"
 	vim.cmd.colorscheme(color)
 
 
